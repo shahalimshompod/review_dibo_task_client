@@ -14,7 +14,7 @@ A React + Vite project with TailwindCSS, DaisyUI, and essential libraries for bu
    npm run dev
 
 ## ⏱ Time Taken
-Approximately X hours (replace with your actual time).
+Approximately 4 hrs
 
 ## 💡 Improvements if Given More Time
 - Add unit and integration tests for core components.
