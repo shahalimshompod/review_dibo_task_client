@@ -16,11 +16,8 @@ const App = () => {
   }, []);
 
   const addReview = (review) => {
-    console.log("its the individual review", review);
     const updated = [review, ...reviews];
     setReviews(updated);
-
-    console.log("reviews", updated);
     localStorage.setItem("reviews", JSON.stringify(updated));
   };
   return (

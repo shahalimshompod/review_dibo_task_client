@@ -8,7 +8,6 @@ const ReviewsContainer = ({ reviews, setReviews }) => {
 
   // handle delete reviews
   const handleDelete = (id) => {
-    console.log(id);
     const reviewsStr = localStorage.getItem("reviews");
     let storedReviews = reviewsStr ? JSON.parse(reviewsStr) : [];
 
