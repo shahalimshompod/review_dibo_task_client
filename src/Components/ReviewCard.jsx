@@ -3,7 +3,14 @@ import { IoInformationCircle } from "react-icons/io5";
 import { MdEditDocument } from "react-icons/md";
 import { MdDeleteForever } from "react-icons/md";
 
-const ReviewCard = ({ shopName, reviewText, rating, date, onDetails, onDelete, onEdit }) => {
+const ReviewCard = ({
+  shopName,
+  reviewText,
+  rating,
+  date,
+  onDetails,
+  onDelete,
+}) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-shadow duration-300 border border-gray-100 w-96">
       {/* Header */}
@@ -32,11 +39,11 @@ const ReviewCard = ({ shopName, reviewText, rating, date, onDetails, onDelete, o
 
       {/* Action Buttons */}
       <div className="flex items-center justify-between">
-        <div className="flex gap-3">
-          <button onClick={onEdit} className="text-green-600 hover:text-green-700 bg-green-100 hover:underline text-sm btn btn-circle border-none">
-            <MdEditDocument size={25} />
-          </button>
-          <button onClick={onDelete} className="text-red-600 hover:text-red-700 bg-red-100 hover:underline text-sm btn btn-circle border-none">
+        <div>
+          <button
+            onClick={onDelete}
+            className="text-red-600 hover:text-red-700 bg-red-100 hover:underline text-sm btn btn-circle border-none"
+          >
             <MdDeleteForever size={25} />
           </button>
         </div>

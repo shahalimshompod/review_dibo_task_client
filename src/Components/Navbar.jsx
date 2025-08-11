@@ -10,11 +10,6 @@ const Navbar = ({ isOpen, setIsOpen, addReview }) => {
           <a className="text-2xl uppercase">Shoppinion</a>
         </div>
         <div className="flex gap-2 items-center">
-          <input
-            type="text"
-            placeholder="Search in reviews"
-            className="input w-48 md:w-auto border-b-2"
-          />
           <div>
             <button
               onClick={() => setIsOpen(true)}

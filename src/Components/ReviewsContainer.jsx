@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import ReviewCard from "./ReviewCard";
 import ReviewDetailsModal from "./ReviewDetailsModal";
 import toast from "react-hot-toast";
-import EditReviewModal from "./EditReviewModal";
 
 const ReviewsContainer = ({ reviews, setReviews }) => {
   const [selectedReview, setSelectedReview] = useState(null);
-  const [selectedReviewForEdit, setSelectedReviewForEdit] = useState(null);
 
   // handle delete reviews
   const handleDelete = (id) => {
@@ -37,7 +35,6 @@ const ReviewsContainer = ({ reviews, setReviews }) => {
               date={review.date}
               onDelete={() => handleDelete(review.id)}
               onDetails={() => setSelectedReview(review)}
-              onEdit={() => setSelectedReviewForEdit(review)}
             />
           ))}
         </div>
@@ -45,11 +42,6 @@ const ReviewsContainer = ({ reviews, setReviews }) => {
       <ReviewDetailsModal
         selectedReview={selectedReview}
         setSelectedReview={setSelectedReview}
-      />
-
-      <EditReviewModal
-        selectedReviewForEdit={selectedReviewForEdit}
-        setSelectedReviewForEdit={setSelectedReviewForEdit}
       />
     </div>
   );
