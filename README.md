@@ -1,12 +1,23 @@
-# React + Vite
+# review_dibo_task_client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite project with TailwindCSS, DaisyUI, and essential libraries for building a modern, responsive web application.
 
-Currently, two official plugins are available:
+## 🚀 Setup Instructions
+1. Clone the repository and navigate into the project folder:
+   git clone <repository-url>
+   cd review_dibo_task_client
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Install dependencies:
+   npm install
 
-## Expanding the ESLint configuration
+3. Start the development server:
+   npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⏱ Time Taken
+Approximately X hours (replace with your actual time).
+
+## 💡 Improvements if Given More Time
+- Add unit and integration tests for core components.
+- Optimize performance and bundle size with code splitting.
+- Implement better error handling and fallback UI states.
+- Add comprehensive documentation for components and hooks.
